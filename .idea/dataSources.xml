@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="baseball_2018" uuid="ccdab907-b9fa-42e7-af63-061e61faa53c">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Documents\GitHub\Sano_resembles\baseball_2018.db</jdbc-url>
+    </data-source>
+  </component>
+</project>
