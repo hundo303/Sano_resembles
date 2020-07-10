@@ -7,5 +7,23 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:D:\Documents\GitHub\Sano_resembles\baseball_2018.db</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="baseball_2010" uuid="4a4791d3-c82f-4d70-87f4-9478ca017189">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Documents\GitHub\Sano_resembles\baseball_2010.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="baseball_2011" uuid="eee294a4-efde-4cc6-9e37-e2f3e38303a8">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Documents\GitHub\Sano_resembles\baseball_2011.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="baseball_2019" uuid="d162118d-1199-4a9e-84b7-5a18744d36bd">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Documents\GitHub\Sano_resembles\baseball_2019.db</jdbc-url>
+    </data-source>
   </component>
 </project>
