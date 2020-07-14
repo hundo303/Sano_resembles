@@ -1,3 +1,6 @@
+#sano_list(取得したい年)
+#入力した年の佐野選手の成績リストを返す
+
 import sqlite3
 
 def sano_list(year):

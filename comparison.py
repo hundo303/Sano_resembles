@@ -1,4 +1,12 @@
-import pandas as pd
+#comparison(比較元の選手, その選手の比較したい年)
+#入力した年の全選手と比較元の選手の成績を比較して、ポイントが高い順で入力した年の全選手のリストを返す
+
+#db_list(取得したい年)
+#入力した年の全選手の成績リストをリストで返す(選手の成績は辞書型)
+
+#ask_score(比較対象の選手の成績リスト, 比較元の選手の成績リスト)
+#後者の選手を基にポイントを算出してその値を返す
+
 import sqlite3
 
 #dbの取得
@@ -38,10 +46,12 @@ def db_list(year):
 
 #比較してポイントのリストを返す
 def comparison(main_list, year):
-    all_list = db_list(year)
+    all_list = db_list(year) #選手ごとの成績リストを内包したリスト
 
     #ポイントのついたリストの生成
-    player_point_list = []
+    player_point_list = [] #ポイントを含めた選手の情報リストを入れるリスト
+
+    #player_score_listは選手ごとの成績リスト
     for player_score_list in all_list:
         player_point_list.append([ask_score(player_score_list, main_list), player_score_list['id'], player_score_list['name']])
 
