@@ -25,10 +25,10 @@ def sano_list(year):
             'name': data[14]
     }
 
-    print(list)
-
 
     cur.close()
     conn.close()
+
+    return list
 
 sano_list('2019')
