@@ -4,7 +4,7 @@
 import sqlite3
 
 def sano_list(year):
-    conn = sqlite3.connect('baseball_' + year + '.db')
+    conn = sqlite3.connect('baseball_' + str(year) + '.db')
     cur = conn.cursor()
 
     cur.execute('SELECT games, ab, r, h, double, triple, hr, rbi, bb, so, sb, ba, slg, id, name FROM batter WHERE name="佐野 恵太"')
@@ -33,5 +33,3 @@ def sano_list(year):
     conn.close()
 
     return list
-
-sano_list('2019')

@@ -1,8 +1,10 @@
-import sano_2019
+import sano
 import comparison
 import pprint
 
-sano_list = sano_2019.sano_list('2019')
-point_list = comparison.comparison(sano_list, '2018')
+target_year = 2019
+
+sano_list = sano.sano_list(target_year)
+point_list = comparison.comparison(sano_list, target_year - 1)
 
 pprint.pprint(point_list)
